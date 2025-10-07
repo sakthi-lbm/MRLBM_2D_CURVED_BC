@@ -15,13 +15,13 @@ We develop a robust curved boundary condition for the 2D MRLBM, combining the co
 - **Validated Benchmark**: Flow past a circular cylinder at Re = 10-200.
 
 ### ✳️ Governing Model
-- **Lattice:** D2Q9 model
-- **Collision Operator:** Regularized single-relaxation-time (BGK-type) in moment space
-- **Boundary Conditions:**
-    - **Inlet:** Constant velocity
-    - **Outlet:** Neumann (zero-gradient) condition
-    - **Cylinder:** No-slip curved boundary condition
-    - **Walls:** No-slip or periodic
+- **Lattice:**  D2Q9 model
+- **Collision Operator :** Regularized single-relaxation-time (BGK-type) in moment space
+- **Boundary Conditions :**
+    - *Inlet :* Constant velocity
+    - *Outlet :* Neumann (zero-gradient) condition
+    - *Cylinder :* No-slip curved boundary condition
+    - *Walls :* No-slip or periodic
 
 ## 📁 Repository Structure
 
