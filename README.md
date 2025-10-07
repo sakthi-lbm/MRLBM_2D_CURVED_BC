@@ -31,22 +31,23 @@ The code serves as a baseline for extending MRLBM to complex and three-dimension
 ## 🧱 Code Structure
 MRLBM-Cylinder/
 ├── src/
-│ ├── mrlbm_module.f90 # Core MRLBM routines (moments, collision, streaming)
-│ ├── boundary_conditions.f90 # Curved and standard boundary implementations
-│ ├── initialize.f90 # Grid and field initialization
-│ ├── postprocessing.f90 # Drag, lift, and Strouhal number calculation
-│ └── main.f90 # Main driver
+│   ├── mrlbm_module.f90          # Core MRLBM routines (moments, collision, streaming)
+│   ├── boundary_conditions.f90   # Curved and standard boundary implementations
+│   ├── initialize.f90            # Grid and field initialization
+│   ├── postprocessing.f90        # Drag, lift, and Strouhal number calculation
+│   └── main.f90                  # Main driver
 │
 ├── input/
-│ └── parameters.dat # Simulation parameters (Re, Nx, Ny, etc.)
+│   └── parameters.dat            # Simulation parameters (Re, Nx, Ny, etc.)
 │
 ├── output/
-│ ├── grid.vti # Geometry file for ParaView
-│ ├── data_000.vti # Time-dependent flow field
-│ └── results/ # Time-averaged quantities
+│   ├── grid.vti                  # Geometry file for ParaView
+│   ├── data_000.vti              # Time-dependent flow field
+│   └── results/                  # Time-averaged quantities
 │
-├── build/ # Compiled objects and executable
-└── README.md # Project documentation
+├── build/                        # Compiled objects and executable
+└── README.md                     # Project documentation
+
 
 
 
