@@ -14,7 +14,7 @@ We develop a robust curved boundary condition for the 2D MRLBM, combining the co
 - **Extrapolation-Based Technique**: Uses quadratic extrapolation to impose wall conditions accurately on stair-case approximated surfaces.
 - **Validated Benchmark**: Flow past a circular cylinder at Re = 10-200.
 
-### ✳️ Governing Model
+### 🧮 Model Description
 - **Lattice:**  D2Q9 model
 - **Collision Operator :** Regularized single-relaxation-time (BGK-type) in moment space
 - **Boundary Conditions :**
@@ -75,6 +75,34 @@ MR_LBM/
 │
 ├── .gitignore                            # Git ignore file
 └── sim_D2Q9_sm86                         # Compiled binary for D2Q9 (sm_86 GPU)
+```
+
+
+## 📜 How to Cite
+If you use or modify this solver in your research, please cite:
+
+*Sakthivel, M., B.Y. dos Anjos, L.A. Hegele Jr. A moments-based regularized lattice Boltzmann method (MRLBM):
+Incompressible curved boundary implementation and validation in two-dimensions. Physics of Fluids (2025).*
+
+GitHub Repository: https://github.com/<your-username>/MRLBM-Cylinder
+
+```text
+@misc{Sakthivel2025MRLBM,
+  author = {Sakthivel, M.},
+  title = {Moment-based Regularized Lattice Boltzmann Solver (MRLBM) for Flow Past a Cylinder},
+  year = {2025},
+  howpublished = {\url{https://github.com/<your-username>/MRLBM-Cylinder}},
+  note = {GitHub repository}
+}
+```
+
+
+
+## 🧩 Future Work
+- Extension to 3D (D3Q19, D3Q27) lattice models
+- Implementation of higher-order regularization (4th-order and 6th order)
+- Implementation of *cut-cell* approach for the curved boundary
+
 
 
 
