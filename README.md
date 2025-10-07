@@ -50,7 +50,6 @@ For curved boundaries, the algorithm:
 ### Prerequisites
 - A C++ compiler supporting C++17 (e.g., `g++`, `clang++`)
 - NVIDIA CUDA Toolkit (for GPU acceleration)
-- CMake (version 3.15 or higher)
 
 ### Build Instructions
 ```bash
@@ -58,8 +57,7 @@ For curved boundaries, the algorithm:
 git clone https://github.com/your_username/your_repo_name.git
 cd your_repo_name
 
-# Create a build directory and compile
-mkdir build
-cd build
-cmake ..
-make -j4
+# compile and run
+cd MR_LBM/src
+bash compile.sh "sim ID"
+
