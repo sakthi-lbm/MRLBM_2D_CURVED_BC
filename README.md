@@ -24,7 +24,7 @@ The core evolution of the particle distribution function is split into:
     ```
 2.  **Regularization**: Filters non-hydrodynamic modes from the distribution function.
     ```math
-    f^*_i = \rho w_i \left( 1+ \frac{ u_\alpha c_{i\alpha}}{a_s^2} + \frac{1}{2} a_s^{-4} m^{*(2)}_{\alpha\beta} H^{(2)}_{\alpha\beta,i} \right)
+    f^*_i = \rho w_i \left( 1+  a_s^2 u_\alpha c_{i\alpha} + \frac{1}{2} a_s^{4} m^{*(2)}_{\alpha\beta} H^{(2)}_{\alpha\beta,i} \right)
     ```
 3.  **Streaming**: Propagates regularized distributions to neighboring nodes.
     ```math
