@@ -29,6 +29,7 @@ The code serves as a baseline for extending MRLBM to complex and three-dimension
 ---
 
 ## 🧱 Code Structure
+(```)
 MRLBM-Cylinder/
 ├── src/
 │   ├── mrlbm_module.f90          # Core MRLBM routines (moments, collision, streaming)
@@ -47,7 +48,7 @@ MRLBM-Cylinder/
 │
 ├── build/                        # Compiled objects and executable
 └── README.md                     # Project documentation
-
+(```)
 
 
 
