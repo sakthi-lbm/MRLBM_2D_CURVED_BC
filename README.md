@@ -1,4 +1,4 @@
-(```)
+```text
 .
 ├── src/                 # Source code
 │   ├── core/           # Core LBM classes (collision, streaming)
@@ -9,4 +9,4 @@
 │   └── cylinder_flow/ # Primary validation case
 ├── docs/              # Documentation
 └── results/           # Output data and visualization scripts
-(```)
+
