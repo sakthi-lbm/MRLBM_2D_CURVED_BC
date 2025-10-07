@@ -1,3 +1,58 @@
+# 🩸 Moment-Based Regularized Lattice Boltzmann Solver (MRLBM)
+
+## Overview
+This repository contains a high-performance implementation of the **Moment-Based Regularized Lattice Boltzmann Method (MRLBM)** for simulating **2D incompressible flow past a circular cylinder**.  
+The solver is developed to demonstrate the advantages of the MRLBM framework—namely **improved numerical stability**, **reduced memory usage**, and **efficient handling of curved geometries**.
+
+The code serves as a baseline for extending MRLBM to complex and three-dimensional geometries.
+
+---
+
+## ✳️ Key Features
+- **Moment-Based Formulation:** Stores and evolves only macroscopic moments instead of full distribution functions.  
+- **Regularized Collision Operator:** Enhances stability by filtering out non-hydrodynamic moments.  
+- **Curved Boundary Conditions:** Implements second-order accurate curved boundary treatment for the cylinder surface.  
+- **Parallel-Ready:** Structured to support future GPU or MPI parallelization.  
+- **Validation:** Verified against benchmark results for flow past a cylinder across a range of Reynolds numbers.
+
+---
+
+## 🧩 Governing Model
+- **Lattice:** D2Q9 model  
+- **Collision Operator:** Regularized single-relaxation-time (BGK-type) in moment space  
+- **Boundary Conditions:**  
+  - Inlet: Constant velocity  
+  - Outlet: Neumann (zero-gradient) condition  
+  - Cylinder: No-slip curved boundary condition  
+  - Walls: Bounce-back or symmetry  
+
+---
+
+## 🧱 Code Structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Moments-Based Regularized LBM with Curved Boundary Conditions
 
 This repository contains the implementation for a **Moments-Based Regularized Lattice Boltzmann Method (MRLBM)** featuring a novel **curved boundary treatment** for accurate and efficient simulation of flows past complex geometries on Cartesian grids.
