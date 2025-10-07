@@ -77,6 +77,28 @@ MR_LBM/
 └── sim_D2Q9_sm86                         # Compiled binary for D2Q9 (sm_86 GPU)
 ```
 
+## 📊 Output Files & Visualization
+
+The simulation generates:
+    - CYLINDER/SIM_ID/grid.x: Computational grid geometry
+    - CYLINDER/SIM_ID/data_XXX.f: Time-dependent flow fields (bindary format)
+    - CYLINDER/SIM_ID/master.p3d: Paraview master file to load all the output files including grid.x
+    
+CYLINDER/SIM_ID/: also Contains:
+    - forces_SIM_ID.dat: Time history of drag and lift forces
+    - pressure_SIM_ID.dat: Time history of surface pressure at different theta
+    - rho_inlet_SIM_INLET.dat: Inlet average density (free-stream density)
+
+
+
+
+
+Open output/cylinder.pvd in ParaView.
+
+Use the “Animation View” to visualize vortex shedding.
+
+Apply “Stream Tracer” or “Plot Over Line” filters for quantitative analysis.
+
 
 ## 📜 How to Cite
 If you use or modify this solver in your research, please cite:
@@ -84,9 +106,9 @@ If you use or modify this solver in your research, please cite:
 *Sakthivel, M., B.Y. dos Anjos, L.A. Hegele Jr. A moments-based regularized lattice Boltzmann method (MRLBM):
 Incompressible curved boundary implementation and validation in two-dimensions. Physics of Fluids (2025).*
 
-GitHub Repository: https://github.com/<your-username>/MRLBM-Cylinder
-
 ```text
+bibtex:
+
 @misc{Sakthivel2025MRLBM,
   author = {Sakthivel, M.},
   title = {Moment-based Regularized Lattice Boltzmann Solver (MRLBM) for Flow Past a Cylinder},
