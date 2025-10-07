@@ -91,7 +91,7 @@ CYLINDER/SIM_ID/: also Contains:
 ```
 
 ## 📜 How to Cite
-If you use or modify this solver in your research, please cite:
+If you use or modify this solver in your research, please cite the following article:
 
 *Sakthivel, M., B.Y. dos Anjos, L.A. Hegele Jr. A moments-based regularized lattice Boltzmann method (MRLBM):
 Incompressible curved boundary implementation and validation in two-dimensions. Physics of Fluids (2025).*
@@ -100,11 +100,9 @@ Incompressible curved boundary implementation and validation in two-dimensions. 
 bibtex:
 
 @misc{Sakthivel2025MRLBM,
-  author = {Sakthivel, M.},
+  author = {Sakthivel, M., B.Y. dos Anjos, L.A. Hegele Jr},
   title = {Moment-based Regularized Lattice Boltzmann Solver (MRLBM) for Flow Past a Cylinder},
   year = {2025},
-  howpublished = {\url{https://github.com/<your-username>/MRLBM-Cylinder}},
-  note = {GitHub repository}
 }
 ```
 
