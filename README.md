@@ -40,7 +40,7 @@ For curved boundaries, the algorithm:
 
 <!-- GEOMETRY FIGURE WILL BE PLACED HERE -->
 <p align="center">
-  <img src="./path/to/geometry_figure.png" alt="Computational Domain and Grid" width="500"/>
+  <img src="cylindergrid.png" alt="Computational Domain and Grid" width="500"/>
   <br>
   <em>Figure 1: (a) Discretization of a curved cylinder on a Cartesian lattice, showing fluid (white), boundary (black), and solid (diamond) nodes. (b) Three-point extrapolation scheme for boundary treatment.</em>
 </p>
