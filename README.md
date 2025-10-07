@@ -6,7 +6,7 @@ This repository contains a CUDA implementation of a **Moments-Based Regularized 
 
 We develop a robust curved boundary condition for the 2D MRLBM, combining the computational efficiency of uniform Cartesian grids with accurate curved-boundary representation through **moment regularization** and **extrapolation**.
 
-### Key Features:
+### ✳️ Key Features:
 - **Memory-Efficient MRLBM**: Stores macroscopic moments instead of full distribution functions, reducing memory usage by **33% (2D)** compared to conventional LBM.
 - **Novel Curved Boundary Treatment**: Implements two methods:
   - **Method A**: Cartesian coordinate approach.
@@ -14,14 +14,14 @@ We develop a robust curved boundary condition for the 2D MRLBM, combining the co
 - **Extrapolation-Based Technique**: Uses quadratic extrapolation to impose wall conditions accurately on stair-case approximated surfaces.
 - **Validated Benchmark**: Flow past a circular cylinder at Re = 10-200.
 
-🧩 Governing Model
-- Lattice: D2Q9 model
-- Collision Operator: Regularized single-relaxation-time (BGK-type) in moment space
+### ✳️ Governing Model
+- **Lattice:** D2Q9 model
+- **Collision Operator:** Regularized single-relaxation-time (BGK-type) in moment space
 - **Boundary Conditions:**
-    - Inlet: Constant velocity
-    - Outlet: Neumann (zero-gradient) condition
-    - Cylinder: No-slip curved boundary condition
-    - Walls: Bounce-back or symmetry
+    - **Inlet:** Constant velocity
+    - **Outlet:** Neumann (zero-gradient) condition
+    - **Cylinder:** No-slip curved boundary condition
+    - **Walls:** No-slip or periodic
 
 ## 📁 Repository Structure
 
