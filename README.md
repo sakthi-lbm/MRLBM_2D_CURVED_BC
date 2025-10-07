@@ -90,16 +90,6 @@ CYLINDER/SIM_ID/: also Contains:
     - rho_inlet_SIM_INLET.dat: Inlet average density (free-stream density)
 ```
 
-
-
-
-Open output/cylinder.pvd in ParaView.
-
-Use the “Animation View” to visualize vortex shedding.
-
-Apply “Stream Tracer” or “Plot Over Line” filters for quantitative analysis.
-
-
 ## 📜 How to Cite
 If you use or modify this solver in your research, please cite:
 
