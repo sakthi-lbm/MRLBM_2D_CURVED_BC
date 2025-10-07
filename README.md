@@ -78,7 +78,7 @@ MR_LBM/
 ```
 
 ## 📊 Output Files & Visualization
-
+```text
 The simulation generates:
     - CYLINDER/SIM_ID/grid.x: Computational grid geometry
     - CYLINDER/SIM_ID/data_XXX.f: Time-dependent flow fields (bindary format)
@@ -88,7 +88,7 @@ CYLINDER/SIM_ID/: also Contains:
     - forces_SIM_ID.dat: Time history of drag and lift forces
     - pressure_SIM_ID.dat: Time history of surface pressure at different theta
     - rho_inlet_SIM_INLET.dat: Inlet average density (free-stream density)
-
+```
 
 
 
