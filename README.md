@@ -24,18 +24,39 @@ We develop a robust curved boundary condition for the 2D MRLBM, combining the co
     - *Walls :* No-slip or periodic
 
 ## 📁 Repository Structure
-
-
-
 ```text
-.
-├── src/                 # Source code
-│   ├── core/           # Core LBM classes (collision, streaming)
-│   ├── boundary/       # Boundary condition implementations
-│   ├── moments/        # Moments-based regularization
-│   └── utils/          # Helper functions (geometry, IO)
-├── examples/           # Example simulations
-│   └── cylinder_flow/ # Primary validation case
-├── docs/              # Documentation
-└── results/           # Output data and visualization scripts
+MR_LBM/
+├── post/                             # Post-processing scripts or analysis tools
+│
+├── src/                              # Source files for MRLBM solver
+│   ├── cases/                        # Case setup files (boundary/geometry definitions)
+│   ├── colrec/                       # Color/recording utilities (if any)
+│   ├── includeFiles/                 # Shared include files
+│   │
+│   ├── arrayIndex.h                  # Indexing macros and utilities
+│   ├── boundaryCondition.cuh         # Boundary condition implementations (GPU)
+│   ├── compile.sh                    # Build script
+│   ├── cylinder_mrlbm.cu             # Flow past a cylinder main case
+│   ├── definitions.h                 # Global constant and type definitions
+│   ├── errorDef.h                    # Error handling macros
+│   ├── globalFunctions.h             # Global utility functions
+│   ├── globalStructs.h               # Global data structures
+│   ├── lbmInitialization.cu          # Initialization routines (GPU)
+│   ├── lbmInitialization.cuh         # Header for initialization kernels
+│   ├── main.cu                       # Main driver file
+│   ├── main.cuh                      # Header for main solver
+│   ├── mlbm.cu                       # MRLBM solver implementation
+│   ├── mlbm.cuh                      # Header for MRLBM kernels
+│   ├── nodeTypeMap.h                 # Node-type mapping (fluid/solid/boundary)
+│   ├── saveData.cu                   # Data output routines
+│   ├── saveData.cuh                  # Header for output routines
+│   ├── treat_data.cu                 # Post-treatment or averaging kernels
+│   ├── treat_data.cuh                # Header for post-processing kernels
+│   └── var.h                         # Variable declarations and parameters
+│
+├── x64/                              # Build directory (compiled objects/binaries)
+│
+├── .gitignore                        # Git ignore rules
+└── sim_D2Q9_sm86                     # Compiled executable (D2Q9 GPU architecture)
+
 
