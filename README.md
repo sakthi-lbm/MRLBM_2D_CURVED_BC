@@ -28,7 +28,7 @@ The core evolution of the particle distribution function is split into:
     ```
 3.  **Streaming**: Propagates regularized distributions to neighboring nodes.
     ```math
-    f_i(\bm{x}+\bm{c}_i \Delta t, t+\Delta t) = f^{*}_i(\bm{x}, t)
+    f_i(\bm{x}+\mathbf{c}_i \Delta t, t+\Delta t) = f^{*}_i(\bm{x}, t)
     ```
 
 ### Curved Boundary Treatment (Method B)
