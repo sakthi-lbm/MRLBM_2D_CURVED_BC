@@ -26,37 +26,55 @@ We develop a robust curved boundary condition for the 2D MRLBM, combining the co
 ## 📁 Repository Structure
 ```text
 MR_LBM/
-├── post/                             # Post-processing scripts or analysis tools
+├── post/                                 # Post-processing and visualization scripts
 │
-├── src/                              # Source files for MRLBM solver
-│   ├── cases/                        # Case setup files (boundary/geometry definitions)
-│   ├── colrec/                       # Color/recording utilities (if any)
-│   ├── includeFiles/                 # Shared include files
+├── src/                                  # Source files for the MRLBM solver
+│   ├── cases/                            # Simulation cases
+│   │   └── cylinder/                     # Flow past a circular cylinder
+│   │       ├── aux_functions.cuh         # Auxiliary GPU device functions
+│   │       ├── boundaries.cuh            # Curved boundary condition implementations
+│   │       ├── constants.h               # Physical and numerical constants
+│   │       ├── interpolation_utilities.cuh # Interpolation and geometry utilities
+│   │       ├── numerical_solutions.cuh   # Numerical solver functions
+│   │       └── outputs_and_model.h       # Output and model configuration
 │   │
-│   ├── arrayIndex.h                  # Indexing macros and utilities
-│   ├── boundaryCondition.cuh         # Boundary condition implementations (GPU)
-│   ├── compile.sh                    # Build script
-│   ├── cylinder_mrlbm.cu             # Flow past a cylinder main case
-│   ├── definitions.h                 # Global constant and type definitions
-│   ├── errorDef.h                    # Error handling macros
-│   ├── globalFunctions.h             # Global utility functions
-│   ├── globalStructs.h               # Global data structures
-│   ├── lbmInitialization.cu          # Initialization routines (GPU)
-│   ├── lbmInitialization.cuh         # Header for initialization kernels
-│   ├── main.cu                       # Main driver file
-│   ├── main.cuh                      # Header for main solver
-│   ├── mlbm.cu                       # MRLBM solver implementation
-│   ├── mlbm.cuh                      # Header for MRLBM kernels
-│   ├── nodeTypeMap.h                 # Node-type mapping (fluid/solid/boundary)
-│   ├── saveData.cu                   # Data output routines
-│   ├── saveData.cuh                  # Header for output routines
-│   ├── treat_data.cu                 # Post-treatment or averaging kernels
-│   ├── treat_data.cuh                # Header for post-processing kernels
-│   └── var.h                         # Variable declarations and parameters
+│   ├── colrec/                           # Collision and reconstruction modules
+│   │   ├── 2nd_order/
+│   │   │   └── collision_and_reconstruction.cuh # Second-order regularization model
+│   │   ├── 3rd_order/                    # Third-order regularization model (future)
+│   │   └── 4th_order/                    # Fourth-order regularization model (future)
+│   │
+│   ├── includeFiles/                     # Common include files
+│   │   ├── interface_handling.cuh        # Interface and memory handling utilities
+│   │   ├── interface.h                   # Global interface definitions
+│   │   ├── popLoad.inc                   # Population loading routines
+│   │   └── popSave.inc                   # Population saving routines
+│   │
+│   ├── arrayIndex.h                      # Macros for indexing and grid mapping
+│   ├── boundaryCondition.cuh             # Generic boundary condition functions
+│   ├── compile.sh                        # Build script for compilation with NVCC
+│   ├── cylinder_mrlbm.cu                 # Cylinder flow main case
+│   ├── definitions.h                     # Global constants and definitions
+│   ├── errorDef.h                        # Error definitions and macros
+│   ├── globalFunctions.h                 # General-purpose GPU/CPU functions
+│   ├── globalStructs.h                   # Structs for grid, field, and LBM data
+│   ├── lbmInitialization.cu              # Initialization routines
+│   ├── lbmInitialization.cuh             # Headers for initialization kernels
+│   ├── main.cu                           # Main driver file
+│   ├── main.cuh                          # Header for main solver
+│   ├── mlbm.cu                           # MRLBM collision/streaming implementation
+│   ├── mlbm.cuh                          # Header for MRLBM kernels
+│   ├── nodeTypeMap.h                     # Node-type (fluid/solid/boundary) mapping
+│   ├── saveData.cu                       # Output and file writing routines
+│   ├── saveData.cuh                      # Header for output routines
+│   ├── treat_data.cu                     # Post-treatment/averaging kernels
+│   ├── treat_data.cuh                    # Header for post-treatment routines
+│   └── var.h                             # Variable declarations and parameters
 │
-├── x64/                              # Build directory (compiled objects/binaries)
+├── x64/                                  # Compiled objects and executables
 │
-├── .gitignore                        # Git ignore rules
-└── sim_D2Q9_sm86                     # Compiled executable (D2Q9 GPU architecture)
+├── .gitignore                            # Git ignore file
+└── sim_D2Q9_sm86                         # Compiled binary for D2Q9 (sm_86 GPU)
+
 
 
