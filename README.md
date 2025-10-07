@@ -1,6 +1,6 @@
 # Moments-Based Regularized LBM with Curved Boundary Conditions
 
-This repository contains a Fortran implementation of a **Moments-Based Regularized Lattice Boltzmann Method (MRLBM)** featuring a novel **curved boundary treatment** for accurate and efficient simulation of flows past complex geometries on Cartesian grids.
+This repository contains a CUDA implementation of a **Moments-Based Regularized Lattice Boltzmann Method (MRLBM)** featuring a novel **curved boundary treatment** for accurate and efficient simulation of flows past complex geometries on Cartesian grids.
 
 ## 🧩 Project Overview
 
