@@ -76,6 +76,12 @@ MR_LBM/
 ├── .gitignore                            # Git ignore file
 └── sim_D2Q9_sm86                         # Compiled binary for D2Q9 (sm_86 GPU)
 ```
+## 🛠️ Compilation & Installation
+git clone https://github.com/sakthi-lbm/MRLBM_2D_CURVED_BC.git
+cd MR_LBM/src
+bash compile.sh
+./../sim_D2Q9_sm86
+
 
 ## 📊 Output Files & Visualization
 ```text
