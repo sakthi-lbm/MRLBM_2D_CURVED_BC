@@ -101,16 +101,24 @@ CYLINDER/SIM_ID/: also Contains:
 ## 📜 How to Cite
 If you use or modify this solver in your research, please cite the following article:
 
-*Sakthivel, M., B.Y. dos Anjos, L.A. Hegele Jr. A moments-based regularized lattice Boltzmann method (MRLBM):
-Incompressible curved boundary implementation and validation in two-dimensions. Physics of Fluids (2025).*
+*Sakthivel Munikrishnan, Bruno Yan Dos Anjos, Luiz A. Hegele; A moments-based regularized lattice Boltzmann method: Incompressible curved boundary implementation and validation in two dimensions. Physics of Fluids 1 November 2025; 37 (11): 113604. https://doi.org/10.1063/5.0299738*
 
 ```text
 bibtex:
 
-@misc{Sakthivel2025MRLBM,
-  author = {Sakthivel, M., B.Y. dos Anjos, L.A. Hegele Jr},
-  title = {Moment-based Regularized Lattice Boltzmann Solver (MRLBM) for Flow Past a Cylinder},
-  year = {2025},
+@article{Munikrishnan2025,
+    author = {Munikrishnan, Sakthivel and Dos Anjos, Bruno Yan and Hegele, Luiz A., Jr.},
+    title = {A moments-based regularized lattice Boltzmann method: Incompressible curved boundary implementation and validation in two dimensions},
+    journal = {Physics of Fluids},
+    volume = {37},
+    number = {11},
+    pages = {113604},
+    year = {2025},
+    month = {11},
+    issn = {1070-6631},
+    doi = {10.1063/5.0299738},
+    url = {https://doi.org/10.1063/5.0299738},
+    eprint = {https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/5.0299738/20792468/113604_1_5.0299738.pdf},
 }
 ```
 
